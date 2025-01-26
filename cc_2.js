@@ -53,3 +53,20 @@ customers.push( //starting a push command, which adds elements to arrays
 );//closes the push command
 
 console.log(customers);//logs the array customers in the console
+
+//Task 5: Object Methods
+let order = { //creating an object named order
+    orderId: 101, //setting variable orderId to the value 101
+    customerName: "Woody Harrelson", //setting variable customerName to string value
+    amount: 400 //setting variable amount to 400
+};//closing the object
+
+function calculateSalesTax(price, taxRate){//creating a function named calculateSalesTax
+    return price * taxRate //creating the function argument
+};//closing the function
+let taxRate = 0.1;//assigning the variable taxRate to 0.1, which is 10%
+let price = order.amount; //setting variable price to the number that is assigned to amount in the object
+
+let taxAmount = calculateSalesTax(price, taxRate);//assigning taxAmount to the out put of the function
+console.log(order);//logging the order in the console
+console.log(taxAmount);//logging the taxAmount in the console
