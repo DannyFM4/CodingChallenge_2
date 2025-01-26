@@ -24,3 +24,32 @@ employee.department = "HR"; //updating the department to say "HR"
 employee.position = "HR Assistant"; //adding a variable position and its value to the object
 
 console.log(employee); //logging the object in the console
+
+//Task 4: Array of Objects
+let customers = [ //creating an array named customers
+    { //inputting an object into the array
+        name: "Brad Pitt", //creating variable name inside an object
+        email: "bradpitt123@gmail.com", //creating variable email and assigning its value inside the object
+        purchaseAmount: 500 //creating variable purchaseAmount and assigning a number in the variable
+    }, //closes the first object
+    {
+        name: "Tom Selleck", //creating variable name inside an object
+        email: "tom.selleck@gmail.com", //creating variable email and assigning its value inside the object
+        purchaseAmount: 235 //creating variable purchaseAmount and assigning a number in the variable
+    }, //closes the second object
+    {
+        name: "Jim Palmer", //creating variable name inside an object
+        email: "jimpalm22@gmail.com", //creating variable email and assigning its value inside the object
+        purchaseAmount: 360 //creating variable purchaseAmount and assigning a number in the variable
+    } //closes the third obect
+]; //closes the array
+
+customers.push( //starting a push command, which adds elements to arrays
+    { //opening an object that is going to be added to the array
+        name: "David Letterman", //name of customer inside the object
+        email: "david.letterman01@gmail.com", //email of customer inside the object
+        purchaseAmount: 100 //purchase amount of customer inside the object
+    } //closes the object
+);//closes the push command
+
+console.log(customers);//logs the array customers in the console
